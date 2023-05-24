@@ -1,0 +1,177 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{calculolista8}
+\author{Filipe Campos}
+\date{May 2023}
+
+\begin{document}
+
+\maketitle
+
+\section{Questão 2}
+Determine a taxa de variação de $f$ em $P$ na direção e sentido de $\vec{v} .
+
+$f(x,y) = x^2 - 5xy + 3y^2$  $P(3,-1) e $\vec{v}$ = (1,1)$
+
+Primeiro vamos calcular o vetor unitário 
+
+
+
+\begin{document}
+
+Dado o vetor $\mathbf{v} = (1,1)$, vamos calcular o vetor unitário $\hat{\mathbf{u}}$.
+
+Primeiro, precisamos encontrar o comprimento do vetor $\mathbf{v}$. Isso pode ser feito usando a fórmula da norma:
+
+\[
+\|\mathbf{v}\| = \sqrt{v_1^2 + v_2^2}
+\]
+
+Substituindo os valores de $\mathbf{v}$, temos:
+
+\[
+\|\mathbf{v}\| = \sqrt{1^2 + 1^2} = \sqrt{2}
+\]
+
+Agora, podemos calcular o vetor unitário $\hat{\mathbf{u}}$ dividindo cada componente de $\mathbf{v}$ pelo seu comprimento:
+
+\[
+\hat{\mathbf{u}} = \left(\frac{v_1}{\|\mathbf{v}\|}, \frac{v_2}{\|\mathbf{v}\|}\right) = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)
+\]
+
+Portanto, o vetor unitário correspondente a $\mathbf{v} = (1,1)$ é $\hat{\mathbf{u}} = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)$.
+
+
+
+\begin{document}
+
+Dada a função $f(x, y) = x^2 - 5xy + 3y^2$ e o ponto $P = (3, -1)$, vamos substituir os valores de $x$ e $y$ nas derivadas parciais.
+
+A derivada parcial de $f$ em relação a $x$, denotada por $\frac{{\partial f}}{{\partial x}}$, é dada por:
+
+\[
+\frac{{\partial f}}{{\partial x}} = 2x - 5y
+\]
+
+Substituindo os valores de $x$ e $y$ pelo ponto $P$, temos:
+
+\[
+\frac{{\partial f}}{{\partial x}}\bigg|_{P} = 2(3) - 5(-1) = 6 + 5 = 11
+\]
+
+A derivada parcial de $f$ em relação a $y$, denotada por $\frac{{\partial f}}{{\partial y}}$, é dada por:
+
+\[
+\frac{{\partial f}}{{\partial y}} = -5x + 6y
+\]
+
+Substituindo os valores de $x$ e $y$ pelo ponto $P$, temos:
+
+\[
+\frac{{\partial f}}{{\partial y}}\bigg|_{P} = -5(3) + 6(-1) = -15 - 6 = -21
+\]
+
+Portanto, substituindo os pontos $P = (3, -1)$ nas derivadas parciais de $f$, obtemos:
+
+\[
+\frac{{\partial f}}{{\partial x}}\bigg|_{P} = 11
+\]
+\[
+\frac{{\partial f}}{{\partial y}}\bigg|_{P} = -21
+\]
+
+
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+Dada a função $f(x, y) = x^2 - 5xy + 3y^2$, o ponto $P = (3, -1)$ e o vetor unitário $\hat{\mathbf{u}} = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)$, vamos multiplicar os resultados das derivadas parciais pelo vetor unitário.
+
+A derivada parcial de $f$ em relação a $x$, $\frac{{\partial f}}{{\partial x}}$, avaliada no ponto $P$, é $11$. Multiplicando esse valor pelo componente $x$ do vetor unitário, obtemos:
+
+\[
+\frac{{\partial f}}{{\partial x}}\bigg|_{P} \cdot \hat{u}_x = 11 \cdot \frac{1}{\sqrt{2}} = \frac{11}{\sqrt{2}}
+\]
+
+A derivada parcial de $f$ em relação a $y$, $\frac{{\partial f}}{{\partial y}}$, avaliada no ponto $P$, é $-21$. Multiplicando esse valor pelo componente $y$ do vetor unitário, obtemos:
+
+\[
+\frac{{\partial f}}{{\partial y}}\bigg|_{P} \cdot \hat{u}_y = -21 \cdot \frac{1}{\sqrt{2}} = -\frac{21}{\sqrt{2}}
+\]
+
+Somando os dois resultados obtemos que a derivada direcional é 16\sqrt{2}
+
+\section{Questão 2}
+
+
+\begin{document}
+
+Para determinar a taxa de variação de \( f \) em \( P \) na direção e sentido de \( \mathbf{v} \), podemos usar a derivada direcional. Primeiro, vamos encontrar o vetor gradiente de \( f \) no ponto \( P \).
+
+Dada a função \( f(x, y) = \frac{x^2}{x + y} \), queremos calcular a derivada direcional de \( f \) no ponto \( P(2, 1) \) na direção do vetor \( \mathbf{v}(1, 1) \).
+
+O vetor gradiente \( \nabla f \) de \( f \) é dado por:
+
+\[
+\nabla f = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)
+\]
+
+Calculando as derivadas parciais:
+
+\[
+\frac{\partial f}{\partial x} = \frac{2x(x + y) - x^2}{(x + y)^2} = \frac{x(x + y)}{(x + y)^2} = \frac{x}{x + y}
+\]
+
+\[
+\frac{\partial f}{\partial y} = \frac{x^2}{(x + y)^2}
+\]
+
+Agora podemos calcular \( \nabla f \) no ponto \( P(2, 1) \):
+
+\[
+\nabla f(P) = \left(\frac{2}{2 + 1}, \frac{2^2}{(2 + 1)^2}\right) = \left(\frac{2}{3}, \frac{4}{9}\right)
+\]
+
+O vetor \( \mathbf{v}(1, 1) \) já está dado. Para que ele seja unitário, podemos dividir cada componente pelo seu comprimento:
+
+\[
+\mathbf{v}_\text{unitário} = \frac{\mathbf{v}}{\|\mathbf{v}\|} = \frac{(1, 1)}{\sqrt{1^2 + 1^2}} = \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right)
+\]
+
+Agora, podemos calcular a taxa de variação usando a fórmula da derivada direcional:
+
+\[
+D_{\mathbf{v}} f = \nabla f(P) \cdot \mathbf{v}_\text{unitário}
+\]
+
+Substituindo os valores, temos:
+
+\[
+D_{\mathbf{v}} f = \left(\frac{2}{3}, \frac{4}{9}\right) \cdot \left(\frac{1}{\sqrt{2}}, \frac{1}{\sqrt{2}}\right) = \frac{2}{3\sqrt{2}} + \frac{4}{9\sqrt{2}} = \frac{2\sqrt{2} + 4}{9\sqrt{2}}
+\]
+
+Portanto, a taxa de variação de \( f \) em \( P \) na direção e sentido de \( \mathbf{v} \) é \( \frac{2\sqrt{2} + 4}{9\sqrt{2}} \).
+\section{Questão 8}
+Dada a função $f(x, y) = \frac{x^2}{2} + \frac{y^2}{2}$, vamos determinar a direção em que a função decresce mais rapidamente no ponto $P(1, 1)$.
+
+O gradiente da função $f(x, y)$ é dado pelo vetor $\nabla f(x, y) = \left(\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}\right)$.
+
+Calculando as derivadas parciais, obtemos:
+
+$\frac{\partial f}{\partial x} = x$ \
+$\frac{\partial f}{\partial y} = y$
+
+Portanto, o gradiente de $f(x, y)$ é:
+
+$\nabla f(x, y) = (x, y)$
+
+Agora, avaliando o gradiente em $P(1, 1)$, temos:
+
+$\nabla f(1, 1) = (1, 1)$
+
+Assim, a direção em que a função decresce mais rapidamente em $P(1, 1)$ é $\nabla f(1, 1) = (1, 1)$.
+
+
+\end{document}
